@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- NAV BAR --> 
+    <nav id="navbar">
+      <h1>C language Documentation</h1>
+      <ul>
+        <li><a class="nav-link" href="#What_is_C">What is C?</a></li>
+        <li><a class="nav-link" href="#Which_C_we_are_learning">Which C we are learning?</a></li>
+        <li><a class="nav-link" href="#Getting_started_with_C">Getting started with C</a></li>
+        <li><a class="nav-link" href="#Alphabets_Digits_and_Special_Symbols">Alphabets, Digits and Special Symbols</a></li>
+        <li><a class="nav-link" href="#Constants_Variables_and_Keywords">Constants, Variables and Keywords</a></li>
+        <li><a class="nav-link" href="#C_keywords">C keywords</a></li>
+        <li><a class="nav-link" href="#The_First_C_program">The First C program</a></li>
+        <li><a class="nav-link" href="#Form_of_a_C_program">Form of a C program</a></li>
+        <li><a class="nav-link" href="#Comments_in_a_C_Program">Comments in a C Program</a></li>
+        <li><a class="nav-link" href="#What_is_main">What is main()?</a></li>
+        <li><a class="nav-link" href="#Variables_and_their_Usage">Variables and their Usage</a></li>
+        <li><a class="nav-link" href="#printf_and_its_Purpose">printf() and its Purpose</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN WEB --> 
+    <main id="main-doc">
+
+      <!-- SECTION WHAT IS C --> 
+      <section class="main-section" id="What_is_C">
+        <header>What is C?</header>
+        <article>
+          <p>
+           C is a programming language developed at AT & T's Bell Laboratories of USA in 1972 by Dennis Ritchie. C became popular because it is simple and easy to use. An opinion that is often heard today is - "C has been already superseded by languages like C++, C# and Java, so why bother to learn C today". I seriously beg to differ with this opinion. There are several reasons for this. These are as follows.
+          </p>
+          <ul>
+            <li>
+              C++, C# or Java make use of a principle called Object Oriented Programming (OOP) to organize programs which offers many advantages. While using OOP, you need basic programming skills. So, it makes more sense to first learn C and then migrate to C++, C# or Java. Though this two-step learning process may take more time, but are at the end of it, you will definitely find it worth the trouble.
+            </li>
+            <li>
+              Major parts of popular operating systems like Windows, UNIX, Linux and Android are written in C. Moreover, if one is to extend the operating system to work with new devices, one needs to write device driver programs. These programs are written exclusively in C.
+            </li>
+            <li>
+              Common consumer devices like microwave ovens, washing machines and digital cameras are getting smarter day by day. This smartness comes from a microprocessor, an operating system and a program embedded in these devices. These programs have to run fast and work in a limited amount of memory. C is the language of choice while building such operating systems and programs.
+              </li> 
+              <li>
+             You must have seen several computer games where the user navigates some object, like say a spaceship and fires bullets at invaders. The essence of all such games is speed. To match this expectation of speed, the game has to react fast to the user inputs. The popular gaming frameworks (like DirectX) that are used for creating such games are written in C.
+              </li> 
+          </ul>
+          <p>
+            I hope that these are very convincing reasons why you should adopt C as the first step in your quest of learning programming.
+          </p>
+        </article>
+      </section>
+
+      <!-- SECTION Which C we are learning?  --> 
+      <section class="main-section" id="Which_C_we_are_learning">
+        <header>Which C we are learning?</header>
+        <article>
+          <p>The official description of the C programming language was published by Brian Kernighan and Dennis Ritchie in 1978. It is commonly referred as K&R.</p>
+          <ul>
+            <li>
+             In 1983, the American National Standards Institute formed a committee, X3j11, to establish a standard specification of C. The ANSI standard was completed in 1989 and ratified as ANSI X3.159-1989 "Programming Language C." This version of the language is often referred to as "ANSI C". It is sometimes also known as C89.
+            </li>
+            <li>In 1995, the ISO published an extension to ANSI C which is often referred to as ISO C. In March 2000, ANSI adopted ISO C. This standard is commonly referred to as C99. All programs in this book are based on C99 standard.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- SECTION Getting started with C  --> 
+      <section class="main-section" id="Getting_started_with_C">
+        <header>Getting started with C</header>
+        <article>
+          <p>
+           There is a close analogy between learning English language and learning C language. This is illustrated below:
+          </p>
+          <ul>
+            <li>
+              Steps in learning English language:
+              <strong>Alphabets--->Words--->Sentences--->Paragraph</strong>
+            </li>
+            <li>
+              Steps in learning C language:
+              <strong>Alphabets Digits Special Symbols--->Constants Variables Keywords--->Instructions--->Program</strong>
+            </li>
+          </ul>
+          <p>
+          As with English, C language too has a set of rules that one must follow while writing programs in it.
+          </p>
+        </article>
+      </section>
+
+      <!-- SECTION Alphabets, Digits and Special Symbols  --> 
+      <section class="main-section" id="Alphabets_Digits_and_Special_Symbols">
+        <header>Alphabets, Digits and Special Symbols</header>
+        <article>
+          Below table shows the valid alphabets, numbers and special symbols allowed in C.
+          <code>
+Alphabets--- A,B,C,.....,Y,Z or a,b,c,......,y,z
+Digits--- 0,1,2,3,4,5,6,7,8,9
+Special Symbols -- ~`!@#%^&*()_-+=|\[]{}:;"'<>,.?/$
+          </code>
+        </article>
+      </section>
+
+      <!-- SECTION Constants, Variables and Keywords  --> 
+      <section class="main-section" id="Constants_Variables_and_Keywords">
+        <header>Constants, Variables and Keywords</header>
+        <p>
+          The alphabets, digits and special symbols when properly combined form constants, variables and keywords. A <strong>constant is an entity that doesn't change, whereas, a variable is an entity that may change. A keyword is a word that carries a special meaning.</strong> In programming language, constants are often called as <strong>literals</strong>, whereas variables are called <strong>identifiers.</strong> Let us now see what different types of constants and variables exist in C.
+        </p>
+        <h3>Types of C constants</h3>
+        <p>
+         Constants in C can be divided into two major categories:
+        </p>
+        <ul>
+         <li><strong>Primary Constants</strong> - Integer, Real, Character</li>
+          <li><strong>Secondary Constants</strong> - Pointer, Array, String, Structure, Union, Enum</li>
+        </ul>
+        <p>At this stage, we would restrict our discussion to only Primary constants, namely, Integer, Real and Character constants. Following Rules have been laid down for constructing these different types of constants:</p>
+        <h3>Rules for Constructing Integer Constants</h3>
+        <ul>
+          <li>An Integer constant must contain at least one digit.</li>
+          <li>It must not contain a decimal point.</li>
+          <li>Its value can be zero, positive or negative. If no sign precedes an integer constant, it is assumed to be positive.</li>
+          <li>Commas or blanks are not allowed within an integer constant.</li>
+          <li>The allowable range for integer constants is -32768 to 32767.<br><strong>Ex: +325, 426, -324, 0</strong></li>
+        </ul>
+        <h3>Rules for Constructing Real Constants</h3>
+        <ul>
+          <li>A real constant must have at least one digit</li>
+          <li>It must have a decimal point</li>
+          <li>It could be positive or negative</li>
+          <li>Default sign is positive</li>
+          <li>No commas or blanks are allowed within a real constant.<br><strong>Ex: +325.34, 426.0, -32.76, -48.5792</strong></li>
+        </ul>
+        <h3>Rules for Constructing Character Constants</h3>
+        <ul>
+          <li>A character constant is a single alphabet, a single digit or a single special symbol enclosed within a pair of single quote marks</li>
+          <li>The maximum length of a character constant can be 1 character. <br><strong>Ex: 'A', 'I', '5', '='</strong></li>
+        </ul>
+      </section>
+
+      <!-- SECTION C keywords --> 
+      <section class="main-section" id="C_keywords">
+        <header>C keywords</header>
+        <article>
+          Keywords are the words whose meaning has already been explained to the C compiler. They are also called 'Reserved words'. Keywords cannot be used as variable names because if we do so, we are trying to assign a new meaning to the keyword, which is not allowed by the compiler.
+          <h3>There are only 32 keywords available in C. Below is the list of keywords in C:</h3>
+          <code>
+            <div>auto else long switch</div>
+            <div>break enum register typedef</div>
+            <div>case extern return union</div>
+            <div>char float short unsigned</div>
+            <div>const for signed void</div>
+            <div>continue goto sizeof volatile</div>
+            <div>default if static while</div>
+            <div>do int struct _Packed</div>
+          </code>
+        </article>
+      </section>
+
+      <!-- SECTION The First C program --> 
+      <section class="main-section" id="The_First_C_program">
+        <header>The First C program</header>
+        <article>
+          Let us now write and execute the first C program. Following program prints the message "my first C program".
+
+          <code>
+#include&ltstdio.h&gt
+main()
+{
+  printf("My first C program");
+}
+          </code>
+        </article>
+      </section>
+
+      <!-- SECTION Form of a C program --> 
+      <section class="main-section" id="Form_of_a_C_program">
+        <header>Form of a C program</header>
+        <article>
+          <p>A C program can also be called a collection of various instructions. These instructions are meant for the computer to perform a specific task. A C program can contain one or more sections. Below figure shows the different sections of a C program.</p>
+          <p>The documentation section consists of a set of comment lines giving the name of the program, the author and other details which the programmer would like to use later. The link section provides instructions to the compiler to link functions from the system library such as using #include&ltstdio.h&gt. The definition section defines all symbolic constants. There is also a main() function section. Every C program must have one main() function section. This section contains two parts, the declaration part and the executable part. The declaration part declares all the variables used in the executable part. These two parts must appear between the opening and closing braces of the main() function. The subprogram section contains all the user-defined functions that are called in the main() function. User-defined functions are generally placed immediately after the main() function, although they may appear in any order.
+          </p>
+        </article>
+      </section>
+
+      <!-- SECTION Comments in a C Program  --> 
+      <section class="main-section" id="Comments_in_a_C_Program">
+        <header>Comments in a C Program</header>
+        <article>
+          <p>While writing a program, we cannot continuously remain in touch with it. After a few months, the program's logic will be forgotten by us. There is a need for some descriptive text in the program that would help us recall the logic of the program. This descriptive text is called a comment.</p>
+          <p>In C, there are two ways to write comments in a program:</p>
+          <h3>Single Line Comment</h3>
+          <p>If a comment occupies a single line, then it is a single line comment. Such comments begin with a double slash symbol.</p>
+          <code>
+            // This is a single line comment
+          </code>
+          <h3>Multi-Line Comment</h3>
+          <p>Multi-line comments are written by enclosing the text within the delimiters /* and */. The text enclosed within the delimiters can occupy many lines.</p>
+          <code>
+            /* This is an example of
+            multi-line comment */
+          </code>
+        </article>
+      </section>
+
+      <!-- SECTION What is main() ? --> 
+      <section class="main-section" id="What_is_main">
+        <header>What is main() ?</header>
+        <article>
+          <p>
+           The main() function is an entry point to a program. The execution of every C program begins with the main() function. main() is a user-defined function. The main() function section consists of two parts - the declaration part and the executable part. The declaration part declares all the variables used in the executable part and gives them a type. These parts must appear between the opening and closing braces of the main() function. Every program should have only one main() function.
+          </p>
+        </article>
+      </section>
+
+      <!-- SECTION Variables and their Usage --> 
+      <section class="main-section" id="Variables_and_their_Usage">
+        <header>Variables and their Usage</header>
+        <article>
+          <p>
+           Variables are names given to locations in memory. These locations can contain integer, real or character constants. The value stored in a variable can be changed during program execution. Every variable has a name, a type and a size associated with it.
+          </p>
+          <p>Rules for Constructing Variable Names:</p>
+          <ul>
+            <li>A variable name is any combination of alphabets, digits or underscores. The first character in the variable name must be an alphabet or underscore.</li>
+            <li>No commas or blanks are allowed within a variable name</li>
+            <li>No special symbol other than an underscore can be used in a variable name.</li>
+          </ul>
+          <p>
+            <strong>Ex:</strong> si_int, marks, total_Weight
+          </p>
+        </article>
+      </section>
+
+      <!-- SECTION printf() and its Purpose  --> 
+      <section class="main-section" id="printf_and_its_Purpose">
+        <header>printf() and its Purpose</header>
+        <article>
+          <p>The printf() function is used to print anything on the screen. It is a library function. The general form of printf() function is:</p>
+          <code>
+            printf("format string", list of variables);
+          </code>
+          <h3>Format String:</h3>
+          <p>The format string can contain:</p>
+          <ul>
+            <li>Characters that are simply printed as they are.</li>
+            <li>Format specifications that begin with a %. Following the % there can be a number of format specifiers. Following are the format specifiers:
+              <code>
+                <div>%c - print a single character</div>
+                <div>%d - print a decimal (base 10) number</div>
+                <div>%f - print a floating point number</div>
+                <div>%s - print a string</div>
+              </code>
+            </li>
+          </ul>
+          <h3>List of Variables:</h3>
+          <p>The list of variables contains the variables whose values we want to print. They must be separated by commas.</p>
+          <h3>Examples of printf() function:</h3>
+          <code>
+#include&ltstdio.h&gt
+main()
+{
+  printf("Hello World");
+}
+          </code>
+          <code>
+#include&ltstdio.h&gt
+main()
+{
+  int a=10;
+  printf("%d",a);
+}
+          </code>
+        </article>
+      </section>
+
+      <!-- SECTION Reference --> 
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <ul>
+          <li><a href="https://www.tutorialspoint.com">Tutorials Point</a></li>
+          <li><a href="https://www.programiz.com">Programiz</a></li>
+          <li><a href="https://www.geeksforgeeks.org">GeeksforGeeks</a></li>
+        </ul>
+      </section>
+
+      <!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-content">
+    <p>&copy; 2024 C Language Documentation | Designed by <a href="https://github.com/ahmmikun">ahmmikun</a></p>
+  </div>
+</footer>
+
+
+    </main>
+  </body>
+</html>
